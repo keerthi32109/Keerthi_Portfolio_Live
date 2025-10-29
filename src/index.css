@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 40% 96%;
+    --foreground: 220 20% 20%;
+
+    --card: 220 30% 98%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 220 30% 98%;
+    --popover-foreground: 220 20% 20%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 180 100% 42%;
+    --secondary-foreground: 220 50% 12%;
+
+    --muted: 220 20% 85%;
+    --muted-foreground: 220 20% 40%;
+
+    --accent: 180 100% 42%;
+    --accent-foreground: 220 50% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 80%;
+    --input: 220 20% 92%;
+    --ring: 210 100% 50%;
+
+    --radius: 1rem;
+
+    --glass-bg: 255 255 255 / 0.7;
+    --glass-border: 220 20% 60% / 0.3;
+    --glow: 210 100% 50% / 0.5;
+    
+    --gradient-start: 220 60% 85%;
+    --gradient-mid: 210 70% 90%;
+    --gradient-end: 180 60% 88%;
+
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl;
+  }
+
+  .glass-card-hover {
+    @apply transition-all duration-300 hover:bg-white/15 hover:border-white/30 hover:shadow-[0_0_40px_rgba(66,153,225,0.3)] hover:scale-[1.02];
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-mid)), hsl(var(--gradient-end)));
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--glow));
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px hsl(var(--glow)), inset 0 0 20px hsl(var(--glow) / 0.1);
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Poppins',sans-serif];
+  }
+}
+
