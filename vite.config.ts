@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // 👇 Add this line
-  base: "/keerthi-portfolio-live/",   // <-- use your repo name here
+  base: "/Keerthi_Portfolio_Live/",   // <-- use your repo name here
 
   server: {
     host: "::",
