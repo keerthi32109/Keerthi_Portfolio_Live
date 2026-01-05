@@ -11,7 +11,11 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 40% 96%;
+    
+    --background: 220 10% 95%;
+
+
+
     --foreground: 220 20% 20%;
 
     --card: 220 30% 98%;
@@ -117,4 +121,9 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-['Poppins',sans-serif];
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 

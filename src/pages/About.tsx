@@ -12,11 +12,39 @@ const About = () => {
 
         {/* Bio Section */}
         <GlassCard className="mb-12 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-          <p className="text-lg leading-relaxed mb-6">
-            I am a Java Full Stack Developer with <span className="text-primary font-semibold">4+ years of experience</span> building 
-            and deploying enterprise applications using Java, Spring Boot, React.js, Node.js, and AWS Cloud. 
-            I specialize in cloud-native architecture, microservices, CI/CD automation, and AI-driven applications.
-          </p>
+        <p className="text-lg leading-relaxed mb-6">
+  I am a <span className="text-primary font-semibold">Full Stack Software Engineer with 5+ years of experience</span> building 
+  scalable, production-ready web applications using Java, Spring Boot, React, and modern cloud technologies. 
+  I bring strong expertise in backend systems, RESTful APIs, microservices architecture, and clean, maintainable 
+  frontend development, with hands-on experience across enterprise and retail environments.
+  <ul className="flex flex-wrap gap-x-8 gap-y-4 mt-6">
+  <li className="flex items-center gap-2">
+    <span className="w-5 h-5 flex items-center justify-center rounded-full bg-primary/20 text-primary text-sm">✓</span>
+    <span>5+ years building scalable, production-ready applications</span>
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span className="w-5 h-5 flex items-center justify-center rounded-full bg-primary/20 text-primary text-sm">✓</span>
+    <span>Strong expertise in Java, Spring Boot, React, and cloud technologies</span>
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span className="w-5 h-5 flex items-center justify-center rounded-full bg-primary/20 text-primary text-sm">✓</span>
+    <span>Experience with enterprise and retail environments</span>
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span className="w-5 h-5 flex items-center justify-center rounded-full bg-primary/20 text-primary text-sm">✓</span>
+    <span>RESTful APIs, microservices architecture, and clean code practices</span>
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span className="w-5 h-5 flex items-center justify-center rounded-full bg-primary/20 text-primary text-sm">✓</span>
+    <span>Full-stack development across backend and frontend interfaces</span>
+  </li>
+</ul>
+
+</p>
           <p className="text-lg leading-relaxed">
             Based in <span className="text-secondary font-semibold">Kansas City, MO</span> and open to opportunities anywhere in the U.S., 
             I am passionate about developing performant, secure, and user-focused software systems.
@@ -38,7 +66,8 @@ const About = () => {
                 Master of Science in Computer Science
               </h3>
               <p className="text-lg font-medium mb-2">University of Central Missouri</p>
-              <p className="text-muted-foreground mb-4">2023 - 2025</p>
+              <p className="text-muted-foreground mb-4">May 2025</p>
+              <p className="text-muted-foreground mb-4">GPA 3.7/4</p>
               <div className="space-y-2">
                 <p className="font-medium">Key Courses:</p>
                 <div className="flex flex-wrap gap-2">
@@ -60,7 +89,35 @@ const About = () => {
                 Bachelor of Technology in Computer Science and Engineering
               </h3>
               <p className="text-lg font-medium mb-2">Viswodaya Institute of Technology and Sciences (JNTU-A)</p>
-              <p className="text-muted-foreground">2018 - 2022</p>
+              <p className="text-muted-foreground">June 2022</p>
+              <p className="text-muted-foreground mb-4">GPA 3.4/4</p>
+              <div className="space-y-2">
+  <p className="font-medium">Key Courses:</p>
+  <div className="flex flex-wrap gap-2">
+    {[
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "Database Management Systems",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Engineering",
+      "Design & Analysis of Algorithms",
+      "Web Technologies",
+      "Compiler Design",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Discrete Mathematics"
+    ].map((course) => (
+      <span
+        key={course}
+        className="px-3 py-1 bg-secondary/20 rounded-full text-sm border border-secondary/30"
+      >
+        {course}
+      </span>
+    ))}
+  </div>
+</div>
+
             </div>
           </GlassCard>
         </div>

@@ -61,11 +61,7 @@ const Certifications = () => {
                   </h2>
                   <p className="text-secondary font-medium">{cert.issuer}</p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 bg-primary/20 rounded-full text-sm border border-primary/30">
-                    {cert.date}
-                  </span>
-                </div>
+                
               </div>
 
               <p className="text-foreground/80 leading-relaxed">
@@ -86,10 +82,7 @@ const Certifications = () => {
                 </div>
               </div>
 
-              <button className="flex items-center gap-2 text-primary hover:text-secondary transition-colors text-sm font-medium mt-4">
-                <span>Verify Certificate</span>
-                <ExternalLink size={16} />
-              </button>
+              
             </GlassCard>
           ))}
         </div>

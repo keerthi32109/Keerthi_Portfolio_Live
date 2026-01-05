@@ -15,6 +15,20 @@ const Projects = () => {
       ]
     },
     {
+      title: "Amazon E-Commerce Clone",
+      subtitle: "Full Stack Shopping Platform",
+      description: "Built a full-featured Amazon-style e-commerce application with dynamic product listings, cart management, and checkout workflows. Implemented frontend and backend integration with a focus on modular architecture, state management, and real-world e-commerce behavior. Ensured application reliability through unit and behavior-driven testing.",
+      technologies: ["JavaScript", "React.js", "HTML5", "CSS3", "Jasmine", "REST APIs", "Backend Services"],
+      features: [
+        "Dynamic product catalog and UI rendering",
+        "Add-to-cart and cart state management",
+        "Checkout and order flow implementation",
+        "Reusable and modular React components",
+        "Unit and behavior testing using Jasmine"
+      ]
+    },
+
+    {
       title: "CulinaryHub",
       subtitle: "Role-Based Recipe Management System",
       description: "Developed a comprehensive recipe management platform with role-based access control, CRUD operations, and optimized caching for improved performance. Features include recipe submission, approval workflows, and user management.",

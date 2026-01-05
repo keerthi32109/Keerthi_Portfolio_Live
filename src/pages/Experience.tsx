@@ -3,33 +3,73 @@ import GlassCard from "@/components/GlassCard";
 
 const Experience = () => {
   const experiences = [
-    {
-      company: "Persistent Systems",
-      role: "Software Engineer",
-      location: "Pune, India",
-      period: "Feb 2022 - Nov 2023",
-      achievements: [
-        "Engineered comprehensive onboarding platforms using Java, Spring Boot, and React.js",
-        "Integrated Apache Kafka and RabbitMQ for asynchronous messaging workflows",
-        "Managed AWS deployments with Docker, Kubernetes, Jenkins, and GitHub Actions",
-        "Designed and implemented Unqork workflows for low-code development",
-        "Developed intelligent chatbots using Kore.AI platform"
-      ],
-      technologies: ["Java", "Spring Boot", "React.js", "Kafka", "RabbitMQ", "AWS", "Docker", "Kubernetes", "Jenkins", "Unqork", "Kore.AI"]
-    },
-    {
-      company: "BlankBot Technologies",
-      role: "Software Developer",
-      location: "Bengaluru, India",
-      period: "Oct 2019 - Jan 2022",
-      achievements: [
-        "Built full-stack web applications with Java and React.js",
-        "Optimized backend queries improving performance by 30%",
-        "Deployed high-availability applications on AWS cloud infrastructure",
-        "Collaborated with cross-functional teams for seamless project delivery"
-      ],
-      technologies: ["Java", "React.js", "AWS", "PostgreSQL", "REST APIs"]
-    }
+    
+      {
+        company: "Staples",
+        role: "Software Engineer / Full Stack Developer",
+        location: "USA",
+        period: "Jan 2024 - Present",
+        achievements: [
+          "Owned end-to-end development of internal enterprise applications using React and Spring Boot supporting business-critical retail workflows",
+          "Enhanced backend APIs and optimized application performance to improve system stability and response times",
+          "Collaborated closely with product, QA, and DevOps teams in Agile sprints to deliver reliable features and improve CI/CD workflows"
+        ],
+        technologies: [
+          "Java",
+          "Spring Boot",
+          "React.js",
+          "REST APIs",
+          "AWS",
+          "CI/CD",
+          "Agile"
+        ]
+      },
+      {
+        company: "Persistent Systems",
+        role: "Software Engineer",
+        location: "Pune, India",
+        period: "Feb 2022 - Nov 2023",
+        achievements: [
+          "Built and scaled enterprise onboarding platforms for Chubb Insurance using Java, Spring Boot, React.js, and RESTful APIs",
+          "Designed event-driven microservices with Kafka and RabbitMQ, handling 500+ API requests per minute",
+          "Automated customer support workflows using Unqork and AI-powered chatbots (Kore.AI), reducing manual interactions by 40%",
+          "Deployed and maintained cloud-native applications on AWS using Docker, Kubernetes, and CI/CD pipelines, achieving 99.9% uptime"
+        ],
+        technologies: [
+          "Java",
+          "Spring Boot",
+          "React.js",
+          "Kafka",
+          "RabbitMQ",
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "REST APIs"
+        ]
+      },
+      {
+        company: "BlankBot Technologies",
+        role: "Software Developer",
+        location: "Bengaluru, India",
+        period: "Oct 2019 - Jan 2022",
+        achievements: [
+          "Designed and developed full-stack web applications using Java, Spring Boot, React.js, and relational databases",
+          "Optimized backend queries across MySQL, Oracle, and PostgreSQL, reducing response times by 30%",
+          "Built reusable React components and modular APIs to improve maintainability and development efficiency"
+        ],
+        technologies: [
+          "Java",
+          "Spring Boot",
+          "React.js",
+          "MySQL",
+          "Oracle",
+          "PostgreSQL",
+          "REST APIs"
+        ]
+      }
+      
+   
   ];
 
   return (

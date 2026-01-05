@@ -88,18 +88,7 @@ const Services = () => {
         </div>
 
         <div className="mt-16 text-center animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-          <GlassCard className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to work together?</h3>
-            <p className="text-foreground/80 mb-6">
-              Let's discuss how I can help bring your project to life with cutting-edge technology and best practices.
-            </p>
-            <button
-              onClick={() => window.location.href = "/contact"}
-              className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold hover:opacity-90 transition-opacity"
-            >
-              Get in Touch
-            </button>
-          </GlassCard>
+        
         </div>
       </div>
     </div>

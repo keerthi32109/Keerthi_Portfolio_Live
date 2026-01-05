@@ -11,6 +11,12 @@ import {
   SiMongodb 
 } from "react-icons/si";
 import { Code2 } from "lucide-react";
+import About from "./About";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import Services from "./Services";
+import Certifications from "./Certifications";
+import Contact from "./Contact";
 
 const Home = () => {
   const techStack = [
@@ -25,7 +31,9 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative overflow-hidden">
+      <main id="home">
+        <div className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative overflow-hidden">
+    
       {/* Enhanced animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Gradient mesh background */}
@@ -133,6 +141,36 @@ const Home = () => {
         </div>
       </div>
     </div>
+                {/* ABOUT */}
+    <section id="about" className="scroll-mt-28">
+      <About />
+    </section>
+
+    {/* EXPERIENCE */}
+    <section id="experience" className="scroll-mt-28">
+      <Experience />
+    </section>
+
+    {/* PROJECTS */}
+    <section id="projects" className="scroll-mt-28">
+      <Projects />
+    </section>
+
+    {/* SERVICES */}
+    <section id="services" className="scroll-mt-28">
+      <Services />
+    </section>
+
+    {/* CERTIFICATIONS */}
+    <section id="certifications" className="scroll-mt-28">
+      <Certifications />
+    </section>
+
+    {/* CONTACT */}
+    <section id="contact" className="scroll-mt-28">
+      <Contact />
+    </section>
+</main>
   );
 };
 
