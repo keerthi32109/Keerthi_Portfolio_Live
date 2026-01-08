@@ -14,15 +14,15 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/keerthi-portfolio-live">
-        <div className="gradient-bg min-h-screen">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+  <Navbar />
+  <Home />
+</BrowserRouter>
+
+
+
+
+
     </TooltipProvider>
   </QueryClientProvider>
 );
