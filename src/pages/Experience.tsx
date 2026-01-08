@@ -8,7 +8,7 @@ const Experience = () => {
         company: "Staples",
         role: "Software Engineer / Full Stack Developer",
         location: "USA",
-        period: "Jan 2024 - Present",
+        period: "Jan 2025 - Present",
         achievements: [
           "Owned end-to-end development of internal enterprise applications using React and Spring Boot supporting business-critical retail workflows",
           "Enhanced backend APIs and optimized application performance to improve system stability and response times",
