@@ -128,8 +128,8 @@ const About = () => {
             className="gap-2 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all hover:scale-105"
             asChild
           >
-   <a
-  href="https://keerthi32109.github.io/Keerthi_Portfolio_Live/keerthiReddyMangilipudi_Resume.pdf"
+ <a
+  href={`${import.meta.env.BASE_URL}KeerthiReddyMangilipudi_Resume.pdf`}
   download="Keerthi_Reddy_Mangilipudi_Resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
@@ -137,6 +137,8 @@ const About = () => {
   <Download size={20} />
   Download Resume
 </a>
+
+
 
           </Button>
           <Button
